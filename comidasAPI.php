@@ -57,10 +57,20 @@ function metodoGET(){
 
 function metodoPOST(){
 
-    // Guardando numa variável o conteúdo pela URL, decodificando o JSON em Array asscociativo 
+    // Guardando numa variável o conteúdo pela URL, decodificando o JSON em Array asscociativo
+
     $novaComida = json_decode(file_get_contents("php://input"), true);
 
-    echo json_encode($novaComida);
+    // PROCESSO de SALVAR MO ARQUIVO JSON
+
+    $comidas = json_decode(file_get_contents("comidas.json"), true);
+
+    $comidas['comidas'] += $novaComida;
+
+    // Salvando o arquivo json
+    file_put_contents("comidas.json", json_encode($comidas, JSON_PRETTY_PRINT));
+
+    echo json_encode("inserimos com sucesso! Problema que apagamos tudo");
 }
 
 
