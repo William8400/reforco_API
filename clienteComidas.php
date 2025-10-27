@@ -10,7 +10,7 @@ $feijoada = json_decode($resposta, true);
 
 echo "<h1> FEIJOADA </h1>";
 echo "<h3> Ingredientes: ".$feijoada['ingredientes']."</h3>";
-echo "<h3> Modo de preparo:".$feijoada['modo de preparo']."</h3>";
+echo "<h3> Modo de preparo: ".$feijoada['modo de preparo']."</h3>";
 
 
 
