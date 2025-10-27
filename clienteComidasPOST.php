@@ -2,7 +2,7 @@
 
 /* Requisição utilizando o método POST para enviar dados  */
 
-$url = "http://localhost/reforco_API/comidasAPI.php";
+$url = "http://localhost/reforco_API/ComidasAPI.php";
 
 /* Montar a estrutura de dados que eu desejo enviar, ARRAY associativo.*/
 
@@ -31,4 +31,6 @@ $contexto = stream_context_create($opcoes);
 
 // Realizar a requisição POST
 $resposta = file_get_contents($url, false, $contexto);
+
+echo $resposta;
 ?>

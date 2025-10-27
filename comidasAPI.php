@@ -16,7 +16,7 @@ switch($metodo){
         break;
 
     case "POST":
-
+         metodoPOST();
         break;
     
     default:
@@ -55,6 +55,13 @@ function metodoGET(){
 
 }
 
+function metodoPOST(){
+
+    // Guardando numa variável o conteúdo pela URL, decodificando o JSON em Array asscociativo 
+    $novaComida = json_decode(file_get_contents("php://input"), true);
+
+    echo json_encode($novaComida);
+}
 
 
 ?>
