@@ -24,7 +24,6 @@ switch($metodo){
     default:
 
         break;
-    
 }
 
 
@@ -36,8 +35,5 @@ function verificar_codigo_secreto(){
         echo json_encode("A mensagem secreta é:: Não existe mensagem secreta!");
     else 
         echo json_encode("Chave de acesso negada!");
-
-
-
 }
 ?>
