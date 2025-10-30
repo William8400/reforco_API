@@ -23,7 +23,6 @@ $opcoes = [
         'content' => json_encode($novaComida)
     ]
 
-
 ];
 
 // Transformar o array opcoes em uma estrutura de URL
