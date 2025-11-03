@@ -15,6 +15,8 @@ switch($metodo){
 
     case "PUT";
 
+        $id = $_GET['id'];
+        atualizar_lista_ninjas($id);
         break;
 
     case "DELETE":
@@ -35,5 +37,27 @@ function verificar_codigo_secreto(){
         echo json_encode("A ".$chave_acesso['nome']." mensagem secreta é:: Não existe mensagem secreta!");
     else 
         echo json_encode("Chave de acesso negada!");
+}
+
+function atualizar_lista_ninjas($id){
+    $lista_ninjas = [
+        
+        'ninjas' => [
+            
+            '01' => [
+                'nome' => "Naruto Uzumaki",
+                'idade' => 17,
+            ],
+
+            '23' => [
+                'nome' => "gabriel jesus",
+                'idade' => 21,
+            ]
+        
+        ]
+    
+    ];
+
+    $lista_ninjas['ninjas']['01']['nome'];
 }
 ?>

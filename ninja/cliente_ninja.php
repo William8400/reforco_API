@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://localhost/reforco_API/api_ninja.php?id=23";
+$url = "http://localhost/reforco_API/ninja/api_ninja.php?id=23";
 
 $ninja = [
     'codigo' => 'ABCDE1234',
