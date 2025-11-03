@@ -1,6 +1,6 @@
 <?php 
 
-$url = "http://localhost/reforco_API/Secreta/api_Secreta.php/descobrir";
+$url = "http://localhost/reforco_API/Secreta/api_Secreta.php";
 
 $verdade_Secreta = [
     'Verdade Secreta' => 242424
