@@ -40,16 +40,19 @@ function verificar_codigo_secreto(){
 }
 
 function atualizar_lista_ninjas($id){
+    
     $lista_ninjas = [
         
-        'ninjas' => [
+        'ninja' => [
             
             '01' => [
+                'id' => '01',
                 'nome' => "Naruto Uzumaki",
                 'idade' => 17,
             ],
 
             '23' => [
+                'id' => '23',
                 'nome' => "gabriel jesus",
                 'idade' => 21,
             ]
@@ -58,6 +61,20 @@ function atualizar_lista_ninjas($id){
     
     ];
 
-    $lista_ninjas['ninjas']['01']['nome'];
+   // $lista_ninjas['ninjas']['01']['nome'];
+
+    if ( $id == $lista_ninjas['ninja']['23']['id']) {
+        
+        $ninja_atualizado = json_decode( file_get_contents("php://input"),true);
+    
+        $lista_ninjas['ninja']['23']['nome'] = $ninja_atualizado['nome'];
+
+        echo json_encode( $lista_ninjas['ninja']['23']);
+        
+    } else {
+        
+        echo json_encode( "Erro: nenhum ninja cadrastado com esse ID" );
+    
+    }
 }
 ?>
