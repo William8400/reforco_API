@@ -20,7 +20,10 @@ switch($metodo){
         break;
 
     case "DELETE":
+        $id = json_decode(file_get_contents("php://input"),true);
 
+        deletar_ninja($id['id']);
+        
         break;
 
     default:
@@ -76,5 +79,37 @@ function atualizar_lista_ninjas($id){
         echo json_encode( "Erro: nenhum ninja cadrastado com esse ID" );
     
     }
+}
+function deletar_ninja($id){
+
+    $lista_ninjas = [
+        
+        'ninja' => [
+            
+            '01' => [
+                'id' => '01',
+                'nome' => "Naruto Uzumaki",
+                'idade' => 17,
+            ],
+
+            '23' => [
+                'id' => '23',
+                'nome' => "gabriel jesus",
+                'idade' => 21,
+            ]
+        
+        ]
+    
+    ];
+
+    if ($id == $lista_ninjas['ninja']['23']['id']) {
+        
+        unset($lista_ninjas['ninja']['23']);
+
+        echo json_encode($lista_ninjas['ninja']);
+    } else {
+        echo json_encode("Erro: Ninja não encontrado");
+    }
+
 }
 ?>

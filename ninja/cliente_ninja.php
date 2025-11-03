@@ -3,12 +3,12 @@
 $url = "http://localhost/reforco_API/ninja/api_ninja.php";
 
 $ninja = [
-    'codigo' => 'ABCDE1234',
+    'id' => '23'
 ];
 
 $estrutura_http = [
     'http' => [
-        'method' => "PUT",
+        'method' => "DELETE",
         'header' => "Content-Type: application/json\r\n",
         'content' => json_encode($ninja)
     ]
