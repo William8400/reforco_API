@@ -38,9 +38,9 @@ function visualizarGET() {
 
     $escolha_Do_Cliente = $_GET['banda'];
 
-    if ($escolha_Do_Cliente == "Mamonas Assassinas") {
+    if ($escolha_Do_Cliente == "Mamonas_Assassinas") {
         
-        $valor_cliente = $bandas['bandas']['Mamonas Assassinas'];
+        $valor_cliente = $bandas['bandas']['Mamonas_Assassinas'];
         
         echo json_encode($valor_cliente);
     } else if ($escolha_Do_Cliente == "Queen"){

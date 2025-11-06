@@ -1,7 +1,7 @@
 {
     "bandas": {
         
-        "Mamonas Assassinas": {
+        "Mamonas_Assassinas": {
             "origem": "Guarulhos, São Paulo Brasil",
             "genero": ["Rock", "Pop Rock", "Sátira", "Humor"],
             "ano_formacao": 1989,
@@ -16,7 +16,7 @@
             "descricao": "Queen é uma das bandas de rock mais icônicas do mundo, conhecida por sua mistura de estilos musicais, performances teatrais e a poderosa voz de Freddie Mercury."
         },
 
-        "Arctic Monkeys": {
+        "Arctic_Monkeys": {
             "origem": "Sheffield, Inglaterra", 
             "genero": ["Indie Rock", "Alternative Rock", "Garage Rock"],
             "ano_formacao": 2002,
