@@ -1,3 +1,29 @@
 {
+    "bandas": {
+        
+        "Mamonas Assassinas": {
+            "origem": "Guarulhos, São Paulo Brasil",
+            "genero": ["Rock", "Pop Rock", "Sátira", "Humor"],
+            "ano_formacao": 1989,
+            "ano_termino": 1996,
+            "descricao": "Banda brasileira conhecida por misturar rock com humor e letras irreverentes."
+        },
+
+        "Queen": {
+            "origem": "Londres, Inglaterra",
+            "genero": ["Rock", "Hard Rock", "Glam Rock", "Progressive Rock"],
+            "ano_formacao": 1970,
+            "descricao": "Queen é uma das bandas de rock mais icônicas do mundo, conhecida por sua mistura de estilos musicais, performances teatrais e a poderosa voz de Freddie Mercury."
+        },
+
+        "Arctic Monkeys": {
+            "origem": "Sheffield, Inglaterra", 
+            "genero": ["Indie Rock", "Alternative Rock", "Garage Rock"],
+            "ano_formacao": 2002,
+            "descricao": "Arctic Monkeys é uma banda britânica de rock alternativo formada em 2002, conhecida por suas letras inteligentes, som inovador e pela liderança carismática de Alex Turner."
+        }
+}
+
     
+
 }
