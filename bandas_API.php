@@ -15,7 +15,7 @@ switch($metodo) {
         break;
 
     case "POST":
-         // criarPOST();
+          criarPOST();
         break;
 
     case "PUT":
@@ -49,6 +49,21 @@ function visualizarGET() {
     } else {
         echo json_encode($bandas);
     }
+}
+
+function criarPOST() {
+
+    $novaBanda = json_decode(file_get_contents("php://input"), true);
+
+    $bandas = json_decode(file_get_contents("bandas.json"), true);
+
+    $bandas['bandas'] += $novaBanda;
+
+    file_put_contents("bandas.json", json_encode($bandas, JSON_PRETTY_PRINT));
+
+    echo json_encode("Inserimos com sucesso!");
+
+
 }
 
 
