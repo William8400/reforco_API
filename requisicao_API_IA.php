@@ -8,7 +8,7 @@ $dados = [
         
             "parts" => [
                 
-                "text" => "Quem é melhor CR7 ou messi?"
+                "text" => "Oi, como vai?"
                 
             ]
         
