@@ -11,25 +11,45 @@ $metodo = $_SERVER["REQUEST_METHOD"];
 
 switch($metodo) {
     case "GET":
-
+          visualizarGET();
         break;
 
     case "POST":
-
+         // criarPOST();
         break;
 
     case "PUT":
-
+        //  editarPUT();
         break;
 
     case "DELETE":
-
+        // excluirDELETE();
+        
         default:
          
-         echo "Cadrasto Inválido";
+         echo "Erro, Método inválido";
     
         break;
 } 
+
+function visualizarGET() {
+    
+    $bandas = json_decode(file_get_contents("bandas.json"), true );
+
+    $escolha_Do_Cliente = $_GET['banda'];
+
+    if ($escolha_Do_Cliente == "Mamonas Assassinas") {
+        
+        $valor_cliente = $bandas['bandas']['Mamonas Assassinas'];
+        
+        echo json_encode($valor_cliente);
+    } else if ($escolha_Do_Cliente == "Queen"){
+        $valor_cliente = $bandas['bandas']['Queen'];
+        echo json_encode($valor_cliente);
+    } else {
+        echo json_encode($bandas);
+    }
+}
 
 
 
