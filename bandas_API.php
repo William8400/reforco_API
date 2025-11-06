@@ -19,11 +19,14 @@ switch($metodo) {
         break;
 
     case "PUT":
-        //  editarPUT();
+        
+        $banda = $_GET['banda'];
+        //  editarPUT($banda);
+    
         break;
 
     case "DELETE":
-        // excluirDELETE();
+        // removerDELETE();
         
         default:
          
@@ -62,6 +65,20 @@ function criarPOST() {
     file_put_contents("bandas.json", json_encode($bandas, JSON_PRETTY_PRINT));
 
     echo json_encode("Inserimos com sucesso!");
+
+
+}
+
+function editarPUT($banda) {
+    
+    $novaBanda = json_decode(file_get_contents("php://input"), true);
+    $bandas = json_decode(file_get_contents("bandas.json"), true);
+
+    if ($bandas['bandas']["id"]===$novaBanda['id']) {
+        $bandas['bandas']['Quenn']['descricao']=$novaBanda['descricao'] ;
+    }
+
+
 
 
 }
