@@ -5,7 +5,7 @@
 
 ## Url http://(seu-dominio.com)/api.php 
 
-## Método GET: ele retorna todas bandas que você quer ou uma específica api.php?banda=Nome_da_Banda
+### Método GET: ele retorna todas bandas que você quer ou uma específica api.php?banda=Nome_da_Banda
 
 ## Exemplos de requisição : 
 
