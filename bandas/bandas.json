@@ -1,11 +1,11 @@
 {
     "bandas": {
         "Mamonas_Assassinas": {
-            "origem": "Guarulhos, S\u00e3o Paulo Brasil",
+            "origem": "Guarulhos, São Paulo Brasil",
             "genero": [
                 "Rock",
                 "Pop Rock",
-                "S\u00e1tira",
+                "Sátira",
                 "Humor"
             ],
             "ano_formacao": 1989,
@@ -20,26 +20,16 @@
                 "Opera Rock"
             ],
             "ano_formacao": 1970,
-            "descricao": "Queen \u00e9 lend\u00e1ria e continua influente at\u00e9 hoje."
-        },
-        "Arctic_Monkeys": {
-            "origem": "Sheffield, Inglaterra",
-            "genero": [
-                "Indie Rock",
-                "Alternative Rock",
-                "Garage Rock"
-            ],
-            "ano_formacao": 2002,
-            "descricao": "Arctic Monkeys \u00e9 uma banda brit\u00e2nica de rock alternativo formada em 2002, conhecida por suas letras inteligentes, som inovador e pela lideran\u00e7a carism\u00e1tica de Alex Turner."
+            "descricao": "Queen é lendária e continua influente até hoje."
         },
         "Mettalica": {
-            "origem": "Los Angeles, Calif\u00f3rnia, Estados Unidos",
+            "origem": "Los Angeles, Califórnia, Estados Unidos",
             "genero": [
                 "Heavy Metal",
                 "Thrash Metal"
             ],
             "ano_formacao": 1981,
-            "descricao": "Metallica \u00e9 uma das bandas mais influentes do heavy metal, conhecida por seu som agressivo, velocidade e letras intensas. Tornou-se um dos maiores nomes do metal mundial, com \u00e1lbuns cl\u00e1ssicos como 'Master of Puppets' e 'Metallica' (The Black Album)"
+            "descricao": "Metallica é uma das bandas mais influentes do heavy metal, conhecida por seu som agressivo, velocidade e letras intensas. Tornou-se um dos maiores nomes do metal mundial, com álbuns clássicos como 'Master of Puppets' e 'Metallica' (The Black Album)"
         }
     }
 }

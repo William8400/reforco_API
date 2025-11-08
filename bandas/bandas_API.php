@@ -24,13 +24,17 @@ switch($metodo) {
         break;
 
     case "DELETE":
-        // removerDELETE();
+        removerDELETE();
+        
+        break;
         
         default:
          
          echo "Erro, Método inválido";
-    
+
         break;
+    
+        
 } 
 
 function visualizarGET() {
@@ -88,6 +92,26 @@ function editarPUT() {
 
     echo json_encode(["erro" => "Banda '$nomeBanda' não encontrado"]);
     
+}
+
+function removerDELETE() {
+    
+    $dadosRecebidos = json_decode(file_get_contents("php://input"), true);
+    
+    $bandas = json_decode(file_get_contents("bandas.json"), true);
+
+    $nomeBanda = array_key_first($dadosRecebidos);
+
+    if (isset($bandas['bandas'][$nomeBanda])) {
+        
+        unset($bandas['bandas'][$nomeBanda]);
+
+        file_put_contents("bandas.json", json_encode($bandas, JSON_PRETTY_PRINT  | JSON_UNESCAPED_UNICODE));
+
+        echo json_encode(["mensagem" => "Banda '$nomeBanda' removida com sucesso!"]);
+    } else {
+        echo json_encode(['erro' => "Banda '$nomeBanda' não encontrada!"]);
+    }
 }
 
 
