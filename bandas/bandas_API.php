@@ -11,17 +11,15 @@ $metodo = $_SERVER["REQUEST_METHOD"];
 
 switch($metodo) {
     case "GET":
-          visualizarGET();
+        visualizarGET();
         break;
 
     case "POST":
-          criarPOST();
+        criarPOST();
         break;
 
     case "PUT":
-        
-        $banda = $_GET['banda'];
-        //  editarPUT($banda);
+        editarPUT();
     
         break;
 
@@ -69,18 +67,27 @@ function criarPOST() {
 
 }
 
-function editarPUT($banda) {
+function editarPUT() {
     
-    $novaBanda = json_decode(file_get_contents("php://input"), true);
-    $bandas = json_decode(file_get_contents("bandas.json"), true);
+    $bandaAlterada = json_decode(file_get_contents("php://input"), true);
 
-    if ($bandas['bandas']["id"]===$novaBanda['id']) {
-        $bandas['bandas']['Quenn']['descricao']=$novaBanda['descricao'] ;
+    $novaBanda = json_decode(file_get_contents("bandas.json"), true);
+
+    $nomeBanda = array_key_first($bandaAlterada);
+
+    
+    
+    if (isset($novaBanda['bandas'][$nomeBanda])) {
+        $novaBanda['bandas'][$nomeBanda] = $bandaAlterada[$nomeBanda];
+
+        file_put_contents("bandas.json", json_encode($novaBanda, JSON_PRETTY_PRINT));
+
+        echo json_encode(["mensagem" =>  " Nome: '$nomeBanda' atualizado com sucesso!"]);
+        return;
     }
 
-
-
-
+    echo json_encode(["erro" => "Banda '$nomeBanda' não encontrado"]);
+    
 }
 
 
