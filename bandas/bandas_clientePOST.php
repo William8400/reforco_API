@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://localhost/reforco_API/bandas_API.php";
+$url = "http://localhost/reforco_API/bandas/bandas_API.php";
 
 $novaBanda = [
     'Mettalica' => [

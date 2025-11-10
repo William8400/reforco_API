@@ -1,6 +1,6 @@
 <?php
 
-$url = "http://localhost/reforco_API/bandas_API.php?banda=Mamonas_Assassinas";
+$url = "http://localhost/reforco_API/bandas/bandas_API.php?banda=Mamonas_Assassinas";
 
 $resposta = file_get_contents($url);
 
