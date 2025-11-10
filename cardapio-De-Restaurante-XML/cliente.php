@@ -13,3 +13,6 @@ foreach ($cardapio as $comida){
     echo "<p><b>Calorias:</b> {$comida->calories}</p>";
 
 }
+
+?>
+
