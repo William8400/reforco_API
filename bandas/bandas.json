@@ -30,6 +30,16 @@
             ],
             "ano_formacao": 1981,
             "descricao": "Metallica \u00e9 uma das bandas mais influentes do heavy metal, conhecida por seu som agressivo, velocidade e letras intensas. Tornou-se um dos maiores nomes do metal mundial, com \u00e1lbuns cl\u00e1ssicos como 'Master of Puppets' e 'Metallica' (The Black Album)"
+        },
+        "The_Beatles": {
+            "origem": "Liverpool, Inglaterra",
+            "genero": [
+                "Rock",
+                "Pop"
+            ],
+            "ano_formacao": 1960,
+            "ano_termino": 1970,
+            "descricao": "The Beatles foram uma das bandas mais influentes da hist\u00f3ria da m\u00fasica, revolucionando o rock e a cultura popular mundial. Formada por John Lennon, Paul McCartney, George Harrison e Ringo Starr, o grupo criou sucessos atemporais como 'Hey Jude', 'Let It Be' e 'Yesterday'."
         }
     }
 }

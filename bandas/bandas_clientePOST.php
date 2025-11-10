@@ -3,12 +3,13 @@
 $url = "http://localhost/reforco_API/bandas/bandas_API.php";
 
 $novaBanda = [
-    'Mettalica' => [
-        'origem' => "Los Angeles, Califórnia, Estados Unidos",
-        'genero' => ["Heavy Metal", "Thrash Metal"],
-        'ano_formacao' => 1981,
-        'descricao' => "Metallica é uma das bandas mais influentes do heavy metal, conhecida por seu som agressivo, velocidade e letras intensas. Tornou-se um dos maiores nomes do metal mundial, com álbuns clássicos como 'Master of Puppets' e 'Metallica' (The Black Album)"
-    ]
+    'The_Beatles' => [
+    'origem' => "Liverpool, Inglaterra",
+    'genero' => ["Rock", "Pop"],
+    'ano_formacao' => 1960,
+    'ano_termino' => 1970,
+    'descricao' => "The Beatles foram uma das bandas mais influentes da história da música, revolucionando o rock e a cultura popular mundial. Formada por John Lennon, Paul McCartney, George Harrison e Ringo Starr, o grupo criou sucessos atemporais como 'Hey Jude', 'Let It Be' e 'Yesterday'."
+]
 ];
 
 $escolha = [
