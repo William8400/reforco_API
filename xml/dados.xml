@@ -1,0 +1,34 @@
+<usuarios>
+
+   <usuario>
+    
+     <nome> William Hidalgo Donato </nome>
+    
+     <altura> 1.70 </altura>
+
+      <hobbies> 
+         
+          <hobbie> Assisitr filmes </hobbie>
+          <hobbie> Jogar Jogos </hobbie>
+      
+      </hobbies>
+
+   </usuario>
+
+   <usuario>
+        
+        <nome> Fernanda Rimenez </nome>
+
+        <altura> 1.57 </altura>
+
+        <hobbies>
+          
+           <hobbie> Desenhar </hobbie>
+           <hobbie> Fazer Ginástica </hobbie>
+
+        </hobbies>
+
+   </usuario>
+
+
+</usuarios>
